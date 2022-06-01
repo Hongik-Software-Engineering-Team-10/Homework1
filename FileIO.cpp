@@ -5,11 +5,7 @@ FileIO::FileIO(const char* inputFile, const char* outputFile)
 	in = fopen(inputFile, "r+");
 	out = fopen(outputFile, "w+");
 };
-FileIO::~FileIO()
-{
-	fclose(in);
-	fclose(out);
-};
+FileIO::~FileIO() {}
 
 FileIO* FileIO::instance = nullptr;
 
@@ -36,4 +32,14 @@ void FileIO::printf(const char* format, ...)
 	va_start(args, format);
 	vfprintf(out, format, args);
 	va_end(args);
+}
+
+void FileIO::close()
+{
+	fclose(in);
+	fclose(out);
+	in = out = NULL;
+
+	delete instance;
+	instance = nullptr;
 }

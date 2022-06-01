@@ -23,5 +23,8 @@ int main()
 		}
 	}
 
+	fio->close();
+	ProductManager::getInstance()->close();
+
 	return 0;
 }

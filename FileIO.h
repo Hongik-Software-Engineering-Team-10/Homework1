@@ -21,5 +21,6 @@ public:
 
 	void scanf(const char* format, ...);
 	void printf(const char* format, ...);
+	void close();
 };
 

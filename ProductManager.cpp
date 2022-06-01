@@ -62,3 +62,9 @@ void ProductManager::createProduct(const char* sellerID, const char* name, const
 
 	createProduct(product);
 }
+
+void ProductManager::close()
+{
+	delete instance;
+	instance = nullptr;
+}
