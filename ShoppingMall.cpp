@@ -2,8 +2,7 @@
 
 State::State()
 {
-	userName[0] = '\0';
-	selectedProduct = Product();
+	userID[0] = selectedProduct[0] = '\0';
 }
 State::~State() {}
 

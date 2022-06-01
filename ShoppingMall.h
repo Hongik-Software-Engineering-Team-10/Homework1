@@ -2,15 +2,17 @@
 #include "BaseControl.h"
 // blablabla
 #include "SearchProductInfo.h"
+#include "PurchaseProduct.h"
 // blablabla
+#define MAX_STRING	32
 
 class State {
 public:
 	State();
 	~State();
 
-	char userName[MAX_STRING];
-	Product selectedProduct;
+	char userID[MAX_STRING];
+	char selectedProduct[MAX_STRING];
 };
 
 class ShoppingMall

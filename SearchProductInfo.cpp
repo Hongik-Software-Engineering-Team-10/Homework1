@@ -9,7 +9,7 @@ void SearchProductInfo::startInterface(State& appState)
 	ui->startInterface(productName);
 
 	Product product = manager->getProduct(productName);
-	if (product.name[0] == '\0')
+	if (product.name[0] == '\0' || product.quantity == 0)
 	{
 		ui->updateInterface("");
 	}
@@ -21,5 +21,6 @@ void SearchProductInfo::startInterface(State& appState)
 			product.price, product.quantity, product.satisfactionScore);
 
 		ui->updateInterface(output);
+		strcpy(appState.selectedProduct, product.name);
 	}
 }

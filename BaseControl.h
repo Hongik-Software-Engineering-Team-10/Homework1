@@ -1,5 +1,6 @@
 #pragma once
 #include "ShoppingMall.h"
+#include "ProductManager.h"
 
 class BaseControl
 {
