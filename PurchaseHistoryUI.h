@@ -1,6 +1,5 @@
 #pragma once
 #include "BaseBoundary.h"
-#include <string> // TODO: remove it.
 
 class PurchaseHistoryUI :
     public BaseBoundary

@@ -1,4 +1,5 @@
 #pragma once
+#include <string> // TODO: remove it.
 #include "BaseControl.h"
 #include "PurchaseHistoryUI.h"
 
