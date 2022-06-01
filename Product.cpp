@@ -3,7 +3,7 @@
 Product::Product()
 {
 	name[0] = production[0] = sellerID[0] = '\0';
-	price = quantity = ratedCount = 0;
+	price = quantity = leftQuantity = ratedCount = 0;
 	satisfactionScore = 0.0;
 }
 Product::Product(const Product& product)
@@ -32,6 +32,7 @@ Product& Product::operator=(const Product& product)
 	strcpy(sellerID, product.sellerID);
 	price = product.price;
 	quantity = product.quantity;
+	leftQuantity = product.leftQuantity;
 	ratedCount = product.ratedCount;
 	satisfactionScore = product.satisfactionScore;
 

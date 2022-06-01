@@ -12,13 +12,14 @@ private:
 
 	std::vector<Product> productList;
 
+	void createProduct(const Product& newProduct);
+
 public:
 	static ProductManager* getInstance();
 
 	std::vector<Product> getProductList();
 	Product getProduct(const char* name);
 	void setProduct(const Product& newProduct);
-	void createProduct(const Product& newProduct);
 	void createProduct(const char* sellerID, const char* name, const char* production, unsigned int price, unsigned int quantity);
 	void close();
 };

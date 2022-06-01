@@ -9,7 +9,7 @@ void PurchaseProduct::startInterface(State& appState)
 	ui->startInterface();
 
 	Product selectedProduct = manager->getProduct(appState.selectedProduct);
-	if (selectedProduct.name[0] == '\0' || selectedProduct.quantity == 0)
+	if (selectedProduct.name[0] == '\0' || selectedProduct.leftQuantity == 0)
 	{
 		ui->updateInterface("");
 		appState.selectedProduct[0] = '\0';
@@ -22,7 +22,7 @@ void PurchaseProduct::startInterface(State& appState)
 
 		// TODO: Do purchase.
 		//DB->purchaseProduct(appState.userID, selectedProduct.name);
-		selectedProduct.quantity--;
+		selectedProduct.leftQuantity--;
 		manager->setProduct(selectedProduct);
 
 		appState.selectedProduct[0] = '\0';
