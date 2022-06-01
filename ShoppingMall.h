@@ -35,7 +35,7 @@ private:
 		{3, 2, nullptr},
 		{3, 3, nullptr},
 		{4, 1, new SearchProductInfo()},
-		{4, 2, nullptr},
+		{4, 2, new PurchaseProduct()},
 		{4, 3, nullptr},
 		{4, 4, nullptr}
 	};

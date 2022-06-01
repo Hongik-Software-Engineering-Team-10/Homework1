@@ -145,6 +145,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductManager.cpp" />
+    <ClCompile Include="PurchaseProduct.cpp" />
+    <ClCompile Include="PurchaseProductUI.cpp" />
     <ClCompile Include="SearchProductInfo.cpp" />
     <ClCompile Include="SearchProductInfoUI.cpp" />
     <ClCompile Include="ShoppingMall.cpp" />
@@ -159,6 +161,10 @@
     <ClInclude Include="FileIO.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductManager.h" />
+    <ClInclude Include="PurchaseHistory.h" />
+    <ClInclude Include="PurchaseHistoryUI.h" />
+    <ClInclude Include="PurchaseProduct.h" />
+    <ClInclude Include="PurchaseProductUI.h" />
     <ClInclude Include="SearchProductInfo.h" />
     <ClInclude Include="SearchProductInfoUI.h" />
     <ClInclude Include="ShoppingMall.h" />
