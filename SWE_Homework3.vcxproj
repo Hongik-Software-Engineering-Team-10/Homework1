@@ -156,10 +156,6 @@
     <ClCompile Include="ShoppingMall.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="output.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="BaseBoundary.h" />
     <ClInclude Include="BaseControl.h" />
     <ClInclude Include="FileIO.h" />
@@ -174,6 +170,11 @@
     <ClInclude Include="SearchProductInfo.h" />
     <ClInclude Include="SearchProductInfoUI.h" />
     <ClInclude Include="ShoppingMall.h" />
+    <ClInclude Include="State.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

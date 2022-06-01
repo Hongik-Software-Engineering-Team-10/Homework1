@@ -80,14 +80,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="output.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="FileIO.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -130,5 +122,16 @@
     <ClInclude Include="RateSatisfactionScoreUI.h">
       <Filter>헤더 파일\Boundary</Filter>
     </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

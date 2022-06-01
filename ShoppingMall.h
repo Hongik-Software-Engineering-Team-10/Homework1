@@ -5,16 +5,6 @@
 #include "PurchaseProduct.h"
 #include "PurchaseHistory.h"
 #include "RateSatisfactionScore.h"
-#define MAX_STRING	32
-
-class State {
-public:
-	State();
-	~State();
-
-	char userID[MAX_STRING];
-	char selectedProduct[MAX_STRING];
-};
 
 class ShoppingMall
 {
