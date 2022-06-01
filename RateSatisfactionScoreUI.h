@@ -1,11 +1,11 @@
 #pragma once
 #include "BaseBoundary.h"
 
-class PurchaseProductUI :
+class RateSatisfactionScoreUI :
     public BaseBoundary
 {
 public:
-    void startInterface();
+    void startInterface(const char* inputString, int& inputInteger);
     void updateInterface(const char* outputString);
 };
 

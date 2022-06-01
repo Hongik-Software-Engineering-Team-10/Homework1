@@ -1,7 +1,7 @@
 #pragma once
 #include "BaseBoundary.h"
 
-class PurchaseProductUI :
+class PurchaseHistoryUI :
     public BaseBoundary
 {
 public:

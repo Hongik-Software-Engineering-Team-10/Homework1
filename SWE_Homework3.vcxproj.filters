@@ -66,6 +66,18 @@
     <ClCompile Include="PurchaseProductUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
+    <ClCompile Include="PurchaseHistory.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseHistoryUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="RateSatisfactionScore.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="RateSatisfactionScoreUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -110,7 +122,13 @@
       <Filter>헤더 파일\Control</Filter>
     </ClInclude>
     <ClInclude Include="PurchaseHistoryUI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="RateSatisfactionScore.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RateSatisfactionScoreUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

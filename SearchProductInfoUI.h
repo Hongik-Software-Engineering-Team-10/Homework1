@@ -5,7 +5,7 @@ class SearchProductInfoUI :
     public BaseBoundary
 {
 public:
-    void startInterface(const char* terminalInput);
-    void updateInterface(const char* terminalOutput);
+    void startInterface(const char* inputString);
+    void updateInterface(const char* outputString);
 };
 

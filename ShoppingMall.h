@@ -3,7 +3,8 @@
 // blablabla
 #include "SearchProductInfo.h"
 #include "PurchaseProduct.h"
-// blablabla
+#include "PurchaseHistory.h"
+#include "RateSatisfactionScore.h"
 #define MAX_STRING	32
 
 class State {
@@ -36,8 +37,8 @@ private:
 		{3, 3, nullptr},
 		{4, 1, new SearchProductInfo()},
 		{4, 2, new PurchaseProduct()},
-		{4, 3, nullptr},
-		{4, 4, nullptr}
+		{4, 3, new PurchaseHistory()},
+		{4, 4, new RateSatisfactionScore()}
 	};
 	State appState;
 
