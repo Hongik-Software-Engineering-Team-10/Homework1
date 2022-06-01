@@ -11,7 +11,7 @@ Product::Product(const Product& product)
 	operator=(product);
 }
 
-Product::~Product(){}
+Product::~Product() {}
 
 void Product::addSatisfactionScore(unsigned int score)
 {
