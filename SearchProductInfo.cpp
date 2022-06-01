@@ -1,6 +1,6 @@
 #include "SearchProductInfo.h"
 
-void SearchProductInfo::startInterface()
+void SearchProductInfo::startInterface(State& appState)
 {
 	ui = new SearchProductInfoUI();
 	auto manager = ProductManager::getInstance();

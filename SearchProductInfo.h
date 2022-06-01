@@ -10,6 +10,6 @@ private:
     SearchProductInfoUI* ui;
 
 public:
-    void startInterface();
+    void startInterface(State& appState);
 };
 

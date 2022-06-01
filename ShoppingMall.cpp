@@ -1,5 +1,12 @@
 #include "ShoppingMall.h"
 
+State::State()
+{
+	userName[0] = '\0';
+	selectedProduct = Product();
+}
+State::~State() {}
+
 ShoppingMall::ShoppingMall() {}
 ShoppingMall::~ShoppingMall()
 {
@@ -16,7 +23,7 @@ void ShoppingMall::run(int menuLevel1, int menuLevel2)
 	{
 		if (item.menuLevel1 == menuLevel1 && item.menuLevel2 == menuLevel2)
 		{
-			item.control->startInterface();
+			item.control->startInterface(appState);
 		}
 	}
 }
