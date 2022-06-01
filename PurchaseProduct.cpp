@@ -27,4 +27,7 @@ void PurchaseProduct::startInterface(State& appState)
 
 		appState.selectedProduct[0] = '\0';
 	}
+
+	delete ui;
+	ui = NULL;
 }

@@ -26,4 +26,7 @@ void PurchaseHistory::startInterface(State& appState)
 
 		first = false;
 	}
+
+	delete ui;
+	ui = NULL;
 }

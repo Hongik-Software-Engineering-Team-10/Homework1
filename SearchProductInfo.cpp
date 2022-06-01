@@ -23,4 +23,7 @@ void SearchProductInfo::startInterface(State& appState)
 		ui->updateInterface(output);
 		strcpy(appState.selectedProduct, product.name);
 	}
+
+	delete ui;
+	ui = NULL;
 }

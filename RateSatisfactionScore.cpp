@@ -24,4 +24,7 @@ void RateSatisfactionScore::startInterface(State& appState)
 
 		manager->setProduct(product);
 	}
+
+	delete ui;
+	ui = NULL;
 }
