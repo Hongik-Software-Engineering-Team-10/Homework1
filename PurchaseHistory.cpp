@@ -9,6 +9,8 @@ void PurchaseHistory::startInterface(State& appState)
 	ui->startInterface();
 
 	std::vector<std::string> purchasedList; //= DB->getPurchasedList(appState.userID);
+	std::sort(purchasedList.begin(), purchasedList.end());
+
 	char output[MAX_STRING * 10], cursor[2][3] = { "  ", "> " };
 	bool first = true;
 	for (std::string productName : purchasedList)
