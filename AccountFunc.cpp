@@ -39,7 +39,7 @@ void SignIn::startInterface(State& appState)
 	ui->startInterface(accountID, accountPW);
 
 	Account account = manager->getAccount(accountID);
-	if (account.ID || strcmp(account.password,accountPW) != 0)
+	if (account.ID[0] == '\0' || strcmp(account.password, accountPW) != 0)
 	{
 		ui->showResult("");
 	}
