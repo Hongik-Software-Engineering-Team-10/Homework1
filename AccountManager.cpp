@@ -64,15 +64,14 @@ void AccountManager::createAccount(const char* name, unsigned int SSN, const cha
 }
 void AccountManager::deleteAccount(const char* ID)
 {
-	Account account = getAccount(ID);
-
-	memset(account.name, NULL, MAX_STRING);
-	account.SSN = 0;
-	memset(account.ID, NULL, MAX_STRING);
-	memset(account.password, NULL, MAX_STRING);
-	
-
-	delete &account;
+	for (int i = 0; i < accountList.size(); i++)
+	{
+		if (strcmp(ID, accountList[i].ID) == 0)
+		{
+			accountList.erase(accountList.begin() + i);
+			return;
+		}
+	}
 }
 
 void AccountManager::close()
