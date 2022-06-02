@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseBoundary.h"
+
 class SignUpUI : public BaseBoundary
 {
 public:

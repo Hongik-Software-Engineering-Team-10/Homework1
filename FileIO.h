@@ -23,4 +23,3 @@ public:
 	void printf(const char* format, ...);
 	void close();
 };
-

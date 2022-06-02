@@ -3,6 +3,6 @@
 void PostNewProductInfoUI::startInterface(const char* ip1, const char* ip2, unsigned int& int1, unsigned int& int2) 
 {
     FileIO* fio = FileIO::getInstance();
-	fio->printf("3.1. íŒë§¤ ì˜ë¥˜ ë“±ë¡\n");
-	fio->scanf("%s%s%d%d", ip1, ip2, int1, int2);
+	fio->printf("3.1. ÆÇ¸Å ÀÇ·ù µî·Ï\n");
+	fio->scanf("%s %s %d %d", ip1, ip2, &int1, &int2);
 }

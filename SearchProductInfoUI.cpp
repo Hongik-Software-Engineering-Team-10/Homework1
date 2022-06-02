@@ -3,7 +3,7 @@
 void SearchProductInfoUI::startInterface(const char* input)
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("4.1. ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½\n");
+	fio->printf("4.1. »óÇ° Á¤º¸ °Ë»ö\n");
 	fio->scanf("%s", input);
 }
 

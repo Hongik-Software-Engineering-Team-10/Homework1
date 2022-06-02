@@ -19,7 +19,7 @@ void RateSatisfactionScore::startInterface(State& appState)
 		product.addSatisfactionScore(score);
 
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s\t%.1lf", product.sellerID, product.name, product.satisfactionScore);
+		sprintf(output, "> %s %s %.0lf\n", product.sellerID, product.name, product.satisfactionScore);
 		ui->updateInterface(output);
 
 		manager->setProduct(product);

@@ -3,7 +3,7 @@
 void PurchaseProductUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("4.2. ÔøΩÔøΩ«∞ ÔøΩÔøΩÔøΩÔøΩ\n");
+	fio->printf("4.2. ªÛ«∞ ±∏∏≈\n");
 }
 
 void PurchaseProductUI::updateInterface(const char* output)

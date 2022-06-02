@@ -4,11 +4,11 @@ void PurchaseHistory::startInterface(State& appState)
 {
 	ui = new PurchaseHistoryUI();
 	auto manager = ProductManager::getInstance();
-	//auto DB = AccountDB::getInstance();
+	auto DB = AccountManager::getInstance();
 
 	ui->startInterface();
 
-	std::vector<std::string> purchasedList; //= DB->getPurchasedList(appState.userID);
+	std::vector<std::string> purchasedList = DB->getPurchasedList(appState.userID);
 	std::sort(purchasedList.begin(), purchasedList.end());
 
 	char output[MAX_STRING * 10], cursor[2][3] = { "  ", "> " };
@@ -21,7 +21,7 @@ void PurchaseHistory::startInterface(State& appState)
 			continue;
 		}
 
-		sprintf(output, "%s%s\t%s\t%s\t%u\t%u\t%.1lf", cursor[first],
+		sprintf(output, "%s%s %s %s %u %u %.0lf\n", cursor[first],
 			product.sellerID, product.name, product.production,
 			product.price, product.leftQuantity, product.satisfactionScore);
 		ui->updateInterface(output);

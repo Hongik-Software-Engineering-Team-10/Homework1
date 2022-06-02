@@ -8,4 +8,3 @@ public:
     void startInterface();
     void updateInterface(const char* outputString);
 };
-
