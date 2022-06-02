@@ -6,8 +6,8 @@ void PostNewProductInfo::startInterface(State& appState)
     ui = new PostNewProductInfoUI();
     auto manager = ProductManager::getInstance();
 
-    char* name; 
-    char* production;
+    char name[MAX_STRING]; 
+    char production[MAX_STRING];
     unsigned int price, quantity;
 
     ui->startInterface(name, production, price, quantity);
