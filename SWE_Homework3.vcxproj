@@ -143,6 +143,7 @@
     <ClCompile Include="BaseControl.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PostNewProductInfoUI.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductManager.cpp" />
     <ClCompile Include="PurchaseHistory.cpp" />
@@ -153,12 +154,17 @@
     <ClCompile Include="RateSatisfactionScoreUI.cpp" />
     <ClCompile Include="SearchProductInfo.cpp" />
     <ClCompile Include="SearchProductInfoUI.cpp" />
+    <ClCompile Include="SellDoneListUI.cpp" />
+    <ClCompile Include="SellerFunc.cpp" />
+    <ClCompile Include="SellListUI.cpp" />
     <ClCompile Include="ShoppingMall.cpp" />
+    <ClCompile Include="StatsUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseBoundary.h" />
     <ClInclude Include="BaseControl.h" />
     <ClInclude Include="FileIO.h" />
+    <ClInclude Include="PostNewProductInfoUI.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductManager.h" />
     <ClInclude Include="PurchaseHistory.h" />
@@ -169,12 +175,12 @@
     <ClInclude Include="RateSatisfactionScoreUI.h" />
     <ClInclude Include="SearchProductInfo.h" />
     <ClInclude Include="SearchProductInfoUI.h" />
+    <ClInclude Include="SellDoneListUI.h" />
+    <ClInclude Include="SellerFunc.h" />
+    <ClInclude Include="SellListUI.h" />
     <ClInclude Include="ShoppingMall.h" />
     <ClInclude Include="State.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="output.txt" />
+    <ClInclude Include="StatsUI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -78,6 +78,21 @@
     <ClCompile Include="RateSatisfactionScoreUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
+    <ClCompile Include="PostNewProductInfoUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SellDoneListUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SellerFunc.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SellListUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="StatsUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileIO.h">
@@ -125,13 +140,20 @@
     <ClInclude Include="State.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="output.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
+    <ClInclude Include="PostNewProductInfoUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SellDoneListUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SellerFunc.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SellListUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
