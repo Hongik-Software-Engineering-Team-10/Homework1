@@ -13,8 +13,6 @@ void SignUp::startInterface(State& appState)
 
 	ui->startInterface(accountName, accountSSN, accountID, accountPW);
 	manager->createAccount(accountName, accountSSN, accountID, accountPW);
-	
-	Account account = manager->getAccount(accountID);
 
 	char output[MAX_STRING * 5];
 	sprintf(output, "> %s\t%u\t%s\t%s",
@@ -38,8 +36,7 @@ void SignIn::startInterface(State& appState)
 	manager->getInstance();
 	ui->startInterface(accountID, accountPW);
 
-	Account account = manager->getAccount(accountID);
-	if (account.ID[0] == '\0' || strcmp(account.password, accountPW) != 0)
+	if (manager->findAccount(accountID, accountPW))
 	{
 		ui->showResult("");
 	}

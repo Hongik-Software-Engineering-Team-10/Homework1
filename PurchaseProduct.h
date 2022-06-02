@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseControl.h"
+#include "AccountManager.h"
 #include "PurchaseProductUI.h"
 
 class PurchaseProduct :

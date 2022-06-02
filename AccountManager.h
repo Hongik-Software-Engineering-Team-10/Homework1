@@ -15,10 +15,7 @@ private:
 public:
 	static AccountManager* getInstance();
 
-	std::vector<Account> getAccountList();
-	Account getAccount(const char* name);
-	void setAccount(const Account& newProduct);
-	void createAccount(const Account& newaccount);
+	bool findAccount(const char* ID, const char* password);
 	void createAccount(const char* name, unsigned int SSN, const char* ID, const char* password);
 	void deleteAccount(const char* ID);
 	void close();

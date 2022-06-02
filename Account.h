@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include <cstring>
 #define MAX_STRING	32
 

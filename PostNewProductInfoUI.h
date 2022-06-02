@@ -1,6 +1,4 @@
 #pragma once
-#include <cstring>
-#include <iostream>
 #include "BaseBoundary.h"
 
 class PostNewProductInfoUI : 

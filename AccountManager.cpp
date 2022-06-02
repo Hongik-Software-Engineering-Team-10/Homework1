@@ -14,41 +14,17 @@ AccountManager* AccountManager::getInstance()
 	return instance;
 }
 
-std::vector<Account> AccountManager::getAccountList()
-{
-	return accountList;
-}
-
-Account AccountManager::getAccount(const char* id)
+bool AccountManager::findAccount(const char* ID, const char* password)
 {
 	for (const Account& account : accountList)
 	{
-		if (strcmp(id, account.ID) == 0)
+		if (strcmp(ID, account.ID) == 0 && strcmp(password, account.password) == 0)
 		{
-			return account;
+			return true;
 		}
 	}
 
-	return Account();
-}
-
-void AccountManager::setAccount(const Account& newAccount)
-{
-	for (Account& account : accountList)
-	{
-		if (strcmp(newAccount.ID, account.ID) == 0)
-		{
-			account = newAccount;
-			return;
-		}
-	}
-
-	createAccount(newAccount);
-}
-
-void AccountManager::createAccount(const Account& newAccount)
-{
-	accountList.push_back(newAccount);
+	return false;
 }
 
 void AccountManager::createAccount(const char* name, unsigned int SSN, const char* ID, const char* password)
@@ -60,7 +36,7 @@ void AccountManager::createAccount(const char* name, unsigned int SSN, const cha
 	strcpy(account.ID, ID);
 	strcpy(account.password, password);
 	
-	createAccount(account);
+	accountList.push_back(account);
 }
 void AccountManager::deleteAccount(const char* ID)
 {
