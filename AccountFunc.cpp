@@ -14,9 +14,6 @@ void SignUp::startInterface(State& appState)
 	ui->startInterface(accountName, accountSSN, accountID, accountPW);
 	manager->createAccount(accountName, accountSSN, accountID, accountPW);
 	
-	FileIO* fio = FileIO::getInstance();
-	fio->printf("%s %d %s %s \n", accountName, accountSSN, accountID, accountPW);
-	
 	Account account = manager->getAccount(accountID);
 
 	char output[MAX_STRING * 5];
