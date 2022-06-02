@@ -60,6 +60,24 @@
     <ClCompile Include="SearchProductInfoUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
+    <ClCompile Include="PurchaseProduct.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseProductUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseHistory.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseHistoryUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="RateSatisfactionScore.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="RateSatisfactionScoreUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
     <ClCompile Include="PostNewProductInfoUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
@@ -75,14 +93,6 @@
     <ClCompile Include="StatsUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="output.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileIO.h">
@@ -108,6 +118,27 @@
     </ClInclude>
     <ClInclude Include="SearchProductInfoUI.h">
       <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseProduct.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseProductUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseHistory.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseHistoryUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="RateSatisfactionScore.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RateSatisfactionScoreUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="PostNewProductInfoUI.h">
       <Filter>헤더 파일\Boundary</Filter>

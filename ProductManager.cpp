@@ -58,7 +58,13 @@ void ProductManager::createProduct(const char* sellerID, const char* name, const
 	strcpy(product.name, name);
 	strcpy(product.production, production);
 	product.price = price;
-	product.quantity = quantity;
+	product.quantity = product.leftQuantity = quantity;
 
 	createProduct(product);
+}
+
+void ProductManager::close()
+{
+	delete instance;
+	instance = nullptr;
 }

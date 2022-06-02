@@ -9,7 +9,7 @@ void SearchProductInfo::startInterface(State& appState)
 	ui->startInterface(productName);
 
 	Product product = manager->getProduct(productName);
-	if (product.name[0] == '\0')
+	if (product.name[0] == '\0' || product.leftQuantity == 0)
 	{
 		ui->updateInterface("");
 	}
@@ -18,8 +18,12 @@ void SearchProductInfo::startInterface(State& appState)
 		char output[MAX_STRING * 10];
 		sprintf(output, "> %s\t%s\t%s\t%u\t%u\t%.1lf",
 			product.sellerID, product.name, product.production,
-			product.price, product.quantity, product.satisfactionScore);
+			product.price, product.leftQuantity, product.satisfactionScore);
 
 		ui->updateInterface(output);
+		strcpy(appState.selectedProduct, product.name);
 	}
+
+	delete ui;
+	ui = NULL;
 }

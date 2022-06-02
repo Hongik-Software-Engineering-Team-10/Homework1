@@ -1,13 +1,10 @@
 #include "ShoppingMall.h"
 
-State::State()
+ShoppingMall::ShoppingMall()
 {
-	userName[0] = '\0';
-	selectedProduct = Product();
+	appState.selectedProduct[0] = appState.userID[0] = '\0';
 }
-State::~State() {}
 
-ShoppingMall::ShoppingMall() {}
 ShoppingMall::~ShoppingMall()
 {
 	for (MenuItem& item : menuItems)

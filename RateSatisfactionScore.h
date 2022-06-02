@@ -1,13 +1,13 @@
 #pragma once
 #include "BaseControl.h"
-#include "SearchProductInfoUI.h"
+#include "RateSatisfactionScoreUI.h"
 
-class SearchProductInfo :
+class RateSatisfactionScore :
     public BaseControl
 {
 private:
-    SearchProductInfoUI* ui;
-
+    RateSatisfactionScoreUI* ui;
+    
 public:
     void startInterface(State& appState);
 };

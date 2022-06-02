@@ -5,11 +5,7 @@ FileIO::FileIO(const char* inputFile, const char* outputFile)
 	in = fopen(inputFile, "r+");
 	out = fopen(outputFile, "w+");
 };
-FileIO::~FileIO()
-{
-	fclose(in);
-	fclose(out);
-};
+FileIO::~FileIO() {}
 
 FileIO* FileIO::instance = nullptr;
 
@@ -22,22 +18,28 @@ FileIO* FileIO::getInstance()
 	return instance;
 }
 
-int FileIO::scanf(const char* format, ...)
+void FileIO::scanf(const char* format, ...)
 {
-	int ret;
 	va_list args;
 	va_start(args, format);
-	ret = vfscanf(in, format, args);
+	vfscanf(in, format, args);
 	va_end(args);
-	return ret;
 }
 
-int FileIO::printf(const char* format, ...)
+void FileIO::printf(const char* format, ...)
 {
-	int ret;
 	va_list args;
 	va_start(args, format);
-	ret = vfprintf(out, format, args);
+	vfprintf(out, format, args);
 	va_end(args);
-	return ret;
+}
+
+void FileIO::close()
+{
+	fclose(in);
+	fclose(out);
+	in = out = NULL;
+
+	delete instance;
+	instance = nullptr;
 }

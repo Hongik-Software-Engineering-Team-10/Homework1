@@ -19,7 +19,8 @@ private:
 public:
 	static FileIO* getInstance();
 
-	int scanf(const char* format, ...);
-	int printf(const char* format, ...);
+	void scanf(const char* format, ...);
+	void printf(const char* format, ...);
+	void close();
 };
 

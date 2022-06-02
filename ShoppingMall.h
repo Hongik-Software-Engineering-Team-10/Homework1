@@ -2,16 +2,9 @@
 #include "BaseControl.h"
 // blablabla
 #include "SearchProductInfo.h"
-// blablabla
-
-class State {
-public:
-	State();
-	~State();
-
-	char userName[MAX_STRING];
-	Product selectedProduct;
-};
+#include "PurchaseProduct.h"
+#include "PurchaseHistory.h"
+#include "RateSatisfactionScore.h"
 
 class ShoppingMall
 {
@@ -33,9 +26,9 @@ private:
 		{3, 2, nullptr},
 		{3, 3, nullptr},
 		{4, 1, new SearchProductInfo()},
-		{4, 2, nullptr},
-		{4, 3, nullptr},
-		{4, 4, nullptr}
+		{4, 2, new PurchaseProduct()},
+		{4, 3, new PurchaseHistory()},
+		{4, 4, new RateSatisfactionScore()}
 	};
 	State appState;
 

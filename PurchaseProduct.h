@@ -1,12 +1,12 @@
 #pragma once
 #include "BaseControl.h"
-#include "SearchProductInfoUI.h"
+#include "PurchaseProductUI.h"
 
-class SearchProductInfo :
+class PurchaseProduct :
     public BaseControl
 {
 private:
-    SearchProductInfoUI* ui;
+    PurchaseProductUI* ui;
 
 public:
     void startInterface(State& appState);
