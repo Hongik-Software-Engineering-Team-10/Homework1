@@ -1,7 +1,7 @@
 #pragma once
 #include "BaseControl.h"
-// blablabla
 #include "AccountFunc.h"
+#include "SellerFunc.h"
 #include "SearchProductInfo.h"
 #include "PurchaseProduct.h"
 #include "PurchaseHistory.h"
@@ -18,18 +18,19 @@ private:
 		BaseControl* control;
 	};
 
-	MenuItem menuItems[11] = {
+	MenuItem menuItems[12] = {
 		{1, 1, new SignUp()}, 
 		{1, 2, new WithdrawAccount()},
 		{2, 1, new SignIn()},
 		{2, 2, new SignOut()},
-		{3, 1, nullptr},
-		{3, 2, nullptr},
-		{3, 3, nullptr},
+		{3, 1, new PostNewProductInfo()},
+		{3, 2, new SellList()},
+		{3, 3, new SellDoneList()},
 		{4, 1, new SearchProductInfo()},
 		{4, 2, new PurchaseProduct()},
 		{4, 3, new PurchaseHistory()},
-		{4, 4, new RateSatisfactionScore()}
+		{4, 4, new RateSatisfactionScore()},
+		{5, 1, new Stats()}
 	};
 	State appState;
 

@@ -16,6 +16,7 @@ public:
 	char production[MAX_STRING];
 	unsigned int price;
 	unsigned int quantity;
+	unsigned int leftQuantity;
 	char sellerID[MAX_STRING];
 	double satisfactionScore;
 

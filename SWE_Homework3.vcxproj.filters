@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\Boundary">
       <UniqueIdentifier>{ac45c00b-4eb4-4187-9e96-0ba27f2ed5a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Control">
+      <UniqueIdentifier>{860c7afc-de0d-465b-92d0-a81c0ae1addd}</UniqueIdentifier>
+    </Filter>
     <Filter Include="헤더 파일\Boundary">
       <UniqueIdentifier>{ac9787c4-d201-4f91-b19a-bfe05ba9c4e8}</UniqueIdentifier>
     </Filter>
@@ -27,9 +30,6 @@
     </Filter>
     <Filter Include="헤더 파일\Entity">
       <UniqueIdentifier>{f548d60b-7dfd-46f3-aa19-c02a950efa4b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Control">
-      <UniqueIdentifier>{860c7afc-de0d-465b-92d0-a81c0ae1addd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,21 @@
       <Filter>소스 파일\Control</Filter>
     </ClCompile>
     <ClCompile Include="RateSatisfactionScoreUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="PostNewProductInfoUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SellDoneListUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SellerFunc.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SellListUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="StatsUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
     <ClCompile Include="SignInUI.cpp">
@@ -146,6 +161,21 @@
     <ClInclude Include="State.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="PostNewProductInfoUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SellDoneListUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SellerFunc.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SellListUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
     <ClInclude Include="Account.h">
       <Filter>헤더 파일\Entity</Filter>
     </ClInclude>
@@ -167,13 +197,5 @@
     <ClInclude Include="WithdrawAccountUI.h">
       <Filter>헤더 파일\Boundary</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="output.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
   </ItemGroup>
 </Project>
