@@ -4,5 +4,5 @@ void PostNewProductInfoUI::startInterface(const char* ip1, const char* ip2, unsi
 {
     FileIO* fio = FileIO::getInstance();
 	fio->printf("3.1. 판매 의류 등록\n");
-	fio->scanf("%s%s%d%d", ip1, ip2, int1, int2);
+	fio->scanf("%s %s %d %d", ip1, ip2, &int1, &int2);
 }

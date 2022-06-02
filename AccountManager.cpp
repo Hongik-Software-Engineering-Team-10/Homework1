@@ -14,7 +14,7 @@ AccountManager* AccountManager::getInstance()
 	return instance;
 }
 
-bool AccountManager::findAccount(const char* ID, const char* password)
+bool AccountManager::signAccount(const char* ID, const char* password)
 {
 	for (const Account& account : accountList)
 	{
@@ -38,6 +38,7 @@ void AccountManager::createAccount(const char* name, unsigned int SSN, const cha
 	
 	accountList.push_back(account);
 }
+
 void AccountManager::deleteAccount(const char* ID)
 {
 	for (int i = 0; i < accountList.size(); i++)
@@ -48,6 +49,30 @@ void AccountManager::deleteAccount(const char* ID)
 			return;
 		}
 	}
+}
+
+void AccountManager::purchaseProduct(const char* ID, const char* product)
+{
+	for (Account& account : accountList)
+	{
+		if (strcmp(ID, account.ID) == 0)
+		{
+			account.purchasedProducts.push_back(std::string(product));
+		}
+	}
+}
+
+std::vector<std::string> AccountManager::getPurchasedList(const char* ID)
+{
+	for (const Account& account : accountList)
+	{
+		if (strcmp(ID, account.ID) == 0)
+		{
+			return account.purchasedProducts;
+		}
+	}
+	
+	return std::vector<std::string>();
 }
 
 void AccountManager::close()

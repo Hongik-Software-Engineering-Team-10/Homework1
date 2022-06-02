@@ -36,7 +36,7 @@ void SignIn::startInterface(State& appState)
 	manager->getInstance();
 	ui->startInterface(accountID, accountPW);
 
-	if (manager->findAccount(accountID, accountPW))
+	if (manager->signAccount(accountID, accountPW))
 	{
 		ui->showResult("");
 	}

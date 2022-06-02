@@ -4,7 +4,7 @@ void PurchaseProduct::startInterface(State& appState)
 {
 	ui = new PurchaseProductUI();
 	auto manager = ProductManager::getInstance();
-	//auto DB = AccountDB::getInstance();
+	auto DB = AccountManager::getInstance();
 
 	ui->startInterface();
 
@@ -20,8 +20,7 @@ void PurchaseProduct::startInterface(State& appState)
 		sprintf(output, "> %s\t%s", selectedProduct.sellerID, selectedProduct.name);
 		ui->updateInterface(output);
 
-		// TODO: Do purchase.
-		//DB->purchaseProduct(appState.userID, selectedProduct.name);
+		DB->purchaseProduct(appState.userID, selectedProduct.name);
 		selectedProduct.leftQuantity--;
 		manager->setProduct(selectedProduct);
 

@@ -3,7 +3,7 @@
 void RateSatisfactionScoreUI::startInterface(const char* inputString, int& inputInteger)
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("4.4. ��ǰ ���Ÿ����� ��\n");
+	fio->printf("4.4. 상품 정보 검색\n");
 	fio->scanf("%s %d", inputString, &inputInteger);
 }
 

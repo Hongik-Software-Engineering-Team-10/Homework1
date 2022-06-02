@@ -1,13 +1,11 @@
 #pragma once
+#include <vector>
 #include <string>
 #include <cstring>
 #define MAX_STRING	32
 
 class Account
 {
-private:
-	// char purchasedProducts[MAX_STRING];
-
 public:
 	Account();
 	Account(const Account& account);
@@ -17,6 +15,7 @@ public:
 	unsigned int SSN;
 	char ID[MAX_STRING];
 	char password[MAX_STRING];
+	std::vector<std::string> purchasedProducts;
 
 	Account& operator=(const Account& account);
 };

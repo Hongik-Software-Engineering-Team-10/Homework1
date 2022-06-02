@@ -4,11 +4,11 @@ void PurchaseHistory::startInterface(State& appState)
 {
 	ui = new PurchaseHistoryUI();
 	auto manager = ProductManager::getInstance();
-	//auto DB = AccountDB::getInstance();
+	auto DB = AccountManager::getInstance();
 
 	ui->startInterface();
 
-	std::vector<std::string> purchasedList; //= DB->getPurchasedList(appState.userID);
+	std::vector<std::string> purchasedList = DB->getPurchasedList(appState.userID);
 	std::sort(purchasedList.begin(), purchasedList.end());
 
 	char output[MAX_STRING * 10], cursor[2][3] = { "  ", "> " };
