@@ -93,6 +93,27 @@
     <ClCompile Include="StatsUI.cpp">
       <Filter>소스 파일\Boundary</Filter>
     </ClCompile>
+    <ClCompile Include="SignInUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SignOutUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="SignUpUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="WithdrawAccountUI.cpp">
+      <Filter>소스 파일\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountFunc.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountManager.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileIO.h">
@@ -153,6 +174,27 @@
       <Filter>헤더 파일\Boundary</Filter>
     </ClInclude>
     <ClInclude Include="StatsUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountManager.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountFunc.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SignInUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SignOutUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SignUpUI.h">
+      <Filter>헤더 파일\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="WithdrawAccountUI.h">
       <Filter>헤더 파일\Boundary</Filter>
     </ClInclude>
   </ItemGroup>

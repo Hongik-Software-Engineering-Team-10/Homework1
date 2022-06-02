@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseControl.h"
+#include "AccountFunc.h"
 #include "SellerFunc.h"
 #include "SearchProductInfo.h"
 #include "PurchaseProduct.h"
@@ -18,10 +19,10 @@ private:
 	};
 
 	MenuItem menuItems[12] = {
-		{1, 1, nullptr}, 
-		{1, 2, nullptr},
-		{2, 1, nullptr},
-		{2, 2, nullptr},
+		{1, 1, new SignUp()}, 
+		{1, 2, new WithdrawAccount()},
+		{2, 1, new SignIn()},
+		{2, 2, new SignOut()},
 		{3, 1, new PostNewProductInfo()},
 		{3, 2, new SellList()},
 		{3, 3, new SellDoneList()},

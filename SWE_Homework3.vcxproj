@@ -159,6 +159,13 @@
     <ClCompile Include="SellListUI.cpp" />
     <ClCompile Include="ShoppingMall.cpp" />
     <ClCompile Include="StatsUI.cpp" />
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="AccountFunc.cpp" />
+    <ClCompile Include="AccountManager.cpp" />
+    <ClCompile Include="SignInUI.cpp" />
+    <ClCompile Include="SignOutUI.cpp" />
+    <ClCompile Include="SignUpUI.cpp" />
+    <ClCompile Include="WithdrawAccountUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseBoundary.h" />
@@ -181,6 +188,13 @@
     <ClInclude Include="ShoppingMall.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StatsUI.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="AccountFunc.h" />
+    <ClInclude Include="AccountManager.h" />
+    <ClInclude Include="SignInUI.h" />
+    <ClInclude Include="SignOutUI.h" />
+    <ClInclude Include="SignUpUI.h" />
+    <ClInclude Include="WithdrawAccountUI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
