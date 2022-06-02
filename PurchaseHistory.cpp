@@ -21,7 +21,7 @@ void PurchaseHistory::startInterface(State& appState)
 			continue;
 		}
 
-		sprintf(output, "%s%s\t%s\t%s\t%u\t%u\t%.1lf", cursor[first],
+		sprintf(output, "%s%s %s %s %u %u %.0lf\n", cursor[first],
 			product.sellerID, product.name, product.production,
 			product.price, product.leftQuantity, product.satisfactionScore);
 		ui->updateInterface(output);

@@ -16,7 +16,7 @@ void SearchProductInfo::startInterface(State& appState)
 	else
 	{
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s\t%s\t%u\t%u\t%.1lf",
+		sprintf(output, "> %s %s %s %u %u %.0lf\n",
 			product.sellerID, product.name, product.production,
 			product.price, product.leftQuantity, product.satisfactionScore);
 

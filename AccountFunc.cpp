@@ -15,7 +15,7 @@ void SignUp::startInterface(State& appState)
 	manager->createAccount(accountName, accountSSN, accountID, accountPW);
 
 	char output[MAX_STRING * 5];
-	sprintf(output, "> %s\t%u\t%s\t%s",
+	sprintf(output, "> %s %u %s %s\n",
 		accountName, accountSSN, accountID, accountPW);
 
 	ui->showResult(output);
@@ -36,7 +36,7 @@ void SignIn::startInterface(State& appState)
 	manager->getInstance();
 	ui->startInterface(accountID, accountPW);
 
-	if (manager->signAccount(accountID, accountPW))
+	if (!manager->signAccount(accountID, accountPW))
 	{
 		ui->showResult("");
 	}
@@ -45,7 +45,7 @@ void SignIn::startInterface(State& appState)
 		strcpy(appState.userID, accountID);
 
 		FileIO* fio = FileIO::getInstance();
-		fio->printf("%s %s \n", accountID, accountPW);
+		fio->printf("> %s %s\n\n", accountID, accountPW);
 	}
 
 	delete ui;
@@ -59,7 +59,7 @@ void SignOut::startInterface(State& appState)
 	ui->startInterface();
 
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("%s \n", appState.userID);
+	fio->printf("> %s\n\n", appState.userID);
 
 	memset(appState.userID, NULL, MAX_STRING);
 
@@ -78,7 +78,7 @@ void WithdrawAccount::startInterface(State& appState)
 	manager->deleteAccount(appState.userID);
 
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("%s \n", appState.userID);
+	fio->printf("%s\n\n", appState.userID);
 
 	memset(appState.userID, NULL, MAX_STRING);
 

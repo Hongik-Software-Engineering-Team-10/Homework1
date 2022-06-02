@@ -17,7 +17,7 @@ void PurchaseProduct::startInterface(State& appState)
 	else
 	{
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s", selectedProduct.sellerID, selectedProduct.name);
+		sprintf(output, "> %s %s\n", selectedProduct.sellerID, selectedProduct.name);
 		ui->updateInterface(output);
 
 		DB->purchaseProduct(appState.userID, selectedProduct.name);
