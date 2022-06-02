@@ -3,7 +3,7 @@
 void PurchaseHistoryUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("4.3. ìƒí’ˆ êµ¬ë§¤ ë‚´ì—­ ì¡°íšŒ\n");
+	fio->printf("4.3. »óÇ° ±¸¸Å ³»¿ª Á¶È¸\n");
 }
 
 void PurchaseHistoryUI::updateInterface(const char* output)

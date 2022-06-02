@@ -3,7 +3,7 @@
 void SignUpUI::startInterface(const char* inputName, unsigned int& inputSSN, const char* inputID, const char* inputPW)
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("1.1. íšŒì›ê°€ìž…\n");
+	fio->printf("1.1. È¸¿ø°¡ÀÔ\n");
 	fio->scanf("%s %d %s %s ", inputName, &inputSSN, inputID, inputPW);
 }
 

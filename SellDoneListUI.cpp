@@ -3,5 +3,5 @@
 void SellDoneListUI::startInterface()
 {
     FileIO* fio = FileIO::getInstance();
-	fio->printf("3.3. íŒë§¤ ì™„ë£Œ ìƒí’ˆ ì¡°íšŒ\n");
+	fio->printf("3.3. ÆÇ¸Å ¿Ï·á »óÇ° Á¶È¸\n");
 }

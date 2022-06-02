@@ -3,7 +3,7 @@
 void WithdrawAccountUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("1.2. íšŒì›íƒˆí‡´\n");
+	fio->printf("1.2. È¸¿øÅ»Åð\n");
 }
 
 void WithdrawAccountUI::showResult(const char* output)

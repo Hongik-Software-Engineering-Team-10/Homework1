@@ -3,5 +3,5 @@
 void StatsUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("5.1. ÌåêÎß§ ÏÉÅÌíà ÌÜµÍ≥Ñ\n");
+	fio->printf("5.1. ∆«∏≈ ªÛ«∞ ≈Î∞Ë\n");
 }
