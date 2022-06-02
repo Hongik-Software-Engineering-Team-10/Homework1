@@ -22,4 +22,3 @@ public:
 	std::vector<std::string> getPurchasedList(const char* ID);
 	void close();
 };
-

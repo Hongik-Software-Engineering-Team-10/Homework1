@@ -3,7 +3,7 @@
 void SignOutUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("2.2. �α׾ƿ�\n");
+	fio->printf("2.2. 로그아웃\n");
 }
 
 void SignOutUI::showResult(const char* output)

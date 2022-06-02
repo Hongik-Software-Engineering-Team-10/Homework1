@@ -23,4 +23,3 @@ public:
 	void createProduct(const char* sellerID, const char* name, const char* production, unsigned int price, unsigned int quantity);
 	void close();
 };
-

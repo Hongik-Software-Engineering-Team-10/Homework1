@@ -3,7 +3,7 @@
 void SignInUI::startInterface(const char* inputID, const char* inputPW)
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("2.1. ·Î±×ÀÎ\n");
+	fio->printf("2.1. ë¡œê·¸ì¸\n");
 	fio->scanf("%s %s", inputID, inputPW);
 }
 

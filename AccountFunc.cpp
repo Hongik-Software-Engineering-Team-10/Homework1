@@ -1,6 +1,6 @@
 #include "AccountFunc.h"
 
-// È¸¿ø °¡ÀÔ
+// íšŒì› ê°€ì…
 void SignUp::startInterface(State& appState)
 {
 	ui = new SignUpUI();
@@ -24,7 +24,7 @@ void SignUp::startInterface(State& appState)
 	ui = NULL;
 }
 
-// ·Î±×ÀÎ
+// ë¡œê·¸ì¸
 void SignIn::startInterface(State& appState)
 {
 	ui = new SignInUI();
@@ -52,7 +52,7 @@ void SignIn::startInterface(State& appState)
 	ui = NULL;
 }
 
-// ·Î±× ¾Æ¿ô
+// ë¡œê·¸ ì•„ì›ƒ
 void SignOut::startInterface(State& appState)
 {
 	ui = new SignOutUI();
@@ -67,7 +67,7 @@ void SignOut::startInterface(State& appState)
 	ui = NULL;
 }
 
-// È¸¿ø Å»Åğ
+// íšŒì› íƒˆí‡´
 void WithdrawAccount::startInterface(State& appState)
 {
 	ui = new WithdrawAccountUI();

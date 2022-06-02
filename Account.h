@@ -19,4 +19,3 @@ public:
 
 	Account& operator=(const Account& account);
 };
-
