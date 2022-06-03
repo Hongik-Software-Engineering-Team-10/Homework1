@@ -11,14 +11,14 @@ void PurchaseProduct::startInterface(State& appState)
 	Product selectedProduct = manager->getProduct(appState.selectedProduct);
 	if (selectedProduct.name[0] == '\0' || selectedProduct.leftQuantity == 0)
 	{
-		ui->updateInterface("");
+		ui->showResult("");
 		appState.selectedProduct[0] = '\0';
 	}
 	else
 	{
 		char output[MAX_STRING * 10];
 		sprintf(output, "> %s %s\n", selectedProduct.sellerID, selectedProduct.name);
-		ui->updateInterface(output);
+		ui->showResult(output);
 
 		DB->purchaseProduct(appState.userID, selectedProduct.name);
 		selectedProduct.leftQuantity--;

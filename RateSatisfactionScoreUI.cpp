@@ -7,7 +7,7 @@ void RateSatisfactionScoreUI::startInterface(const char* inputString, int& input
 	fio->scanf("%s %d", inputString, &inputInteger);
 }
 
-void RateSatisfactionScoreUI::updateInterface(const char* outputString)
+void RateSatisfactionScoreUI::showResult(const char* outputString)
 {
 	FileIO* fio = FileIO::getInstance();
 	fio->printf("%s\n", outputString);

@@ -11,7 +11,7 @@ void SearchProductInfo::startInterface(State& appState)
 	Product product = manager->getProduct(productName);
 	if (product.name[0] == '\0' || product.leftQuantity == 0)
 	{
-		ui->updateInterface("");
+		ui->showResult("");
 	}
 	else
 	{
@@ -20,7 +20,7 @@ void SearchProductInfo::startInterface(State& appState)
 			product.sellerID, product.name, product.production,
 			product.price, product.leftQuantity, product.satisfactionScore);
 
-		ui->updateInterface(output);
+		ui->showResult(output);
 		strcpy(appState.selectedProduct, product.name);
 	}
 

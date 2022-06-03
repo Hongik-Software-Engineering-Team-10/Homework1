@@ -5,5 +5,5 @@ class SignOutUI : public BaseBoundary
 {
 public:
 	void startInterface();
-	void showResult(const char* resultUI);
+	void showResult(const char* output);
 };

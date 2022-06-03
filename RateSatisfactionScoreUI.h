@@ -6,5 +6,5 @@ class RateSatisfactionScoreUI :
 {
 public:
     void startInterface(const char* inputString, int& inputInteger);
-    void updateInterface(const char* outputString);
+    void showResult(const char* output);
 };

@@ -6,5 +6,5 @@ class PurchaseHistoryUI :
 {
 public:
     void startInterface();
-    void updateInterface(const char* outputString);
+    void showResult(const char* output);
 };

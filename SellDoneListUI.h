@@ -6,4 +6,5 @@ class SellDoneListUI :
 {
 public:
 	void startInterface();
+	void showResult(const char* output);
 };

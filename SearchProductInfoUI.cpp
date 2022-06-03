@@ -7,7 +7,7 @@ void SearchProductInfoUI::startInterface(const char* input)
 	fio->scanf("%s", input);
 }
 
-void SearchProductInfoUI::updateInterface(const char* output)
+void SearchProductInfoUI::showResult(const char* output)
 {
 	FileIO* fio = FileIO::getInstance();
 	fio->printf("%s\n", output);

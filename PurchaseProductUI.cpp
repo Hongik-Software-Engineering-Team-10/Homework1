@@ -6,7 +6,7 @@ void PurchaseProductUI::startInterface()
 	fio->printf("4.2. 상품 구매\n");
 }
 
-void PurchaseProductUI::updateInterface(const char* output)
+void PurchaseProductUI::showResult(const char* output)
 {
 	FileIO* fio = FileIO::getInstance();
 	fio->printf("%s\n", output);

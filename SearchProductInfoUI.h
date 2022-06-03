@@ -6,5 +6,5 @@ class SearchProductInfoUI :
 {
 public:
     void startInterface(const char* inputString);
-    void updateInterface(const char* outputString);
+    void showResult(const char* output);
 };
