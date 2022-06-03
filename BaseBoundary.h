@@ -4,7 +4,6 @@
 class BaseBoundary
 {
 public:
-	BaseBoundary();
-	~BaseBoundary();
+	virtual void startInterface();
+	virtual void showResult();
 };
-

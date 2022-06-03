@@ -18,6 +18,7 @@ Account& Account::operator=(const Account& account)
 	strcpy(password, account.password);
 	strcpy(ID, account.ID);
 	SSN = account.SSN;
+	purchasedProducts = std::vector<std::string>(account.purchasedProducts);
 
 	return (*this);
 }

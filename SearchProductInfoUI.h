@@ -5,7 +5,6 @@ class SearchProductInfoUI :
     public BaseBoundary
 {
 public:
-    void startInterface(const char* inputString);
-    void updateInterface(const char* outputString);
+    virtual void startInterface(const char* inputString);
+    virtual void showResult(const char* outputString);
 };
-

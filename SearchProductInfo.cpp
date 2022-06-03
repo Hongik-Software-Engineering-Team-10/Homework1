@@ -11,16 +11,16 @@ void SearchProductInfo::startInterface(State& appState)
 	Product product = manager->getProduct(productName);
 	if (product.name[0] == '\0' || product.leftQuantity == 0)
 	{
-		ui->updateInterface("");
+		ui->showResult("");
 	}
 	else
 	{
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s\t%s\t%u\t%u\t%.1lf",
+		sprintf(output, "> %s %s %s %u %u %.0lf\n",
 			product.sellerID, product.name, product.production,
 			product.price, product.leftQuantity, product.satisfactionScore);
 
-		ui->updateInterface(output);
+		ui->showResult(output);
 		strcpy(appState.selectedProduct, product.name);
 	}
 

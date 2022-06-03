@@ -5,7 +5,6 @@ class PurchaseProductUI :
     public BaseBoundary
 {
 public:
-    void startInterface();
-    void updateInterface(const char* outputString);
+    virtual void startInterface();
+    virtual void showResult(const char* output);
 };
-

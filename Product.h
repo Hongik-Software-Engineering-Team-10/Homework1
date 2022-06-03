@@ -23,4 +23,3 @@ public:
 	void addSatisfactionScore(unsigned int score);
 	Product& operator=(const Product& product);
 };
-

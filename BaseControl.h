@@ -10,4 +10,3 @@ public:
 
 	virtual void startInterface(State& appState) = 0;
 };
-

@@ -45,4 +45,3 @@ private:
 public:
     void startInterface(State& appState);
 };
-

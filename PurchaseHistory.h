@@ -1,7 +1,7 @@
 #pragma once
-#include <string> // TODO: remove it.
 #include <algorithm>
 #include "BaseControl.h"
+#include "AccountManager.h"
 #include "PurchaseHistoryUI.h"
 
 class PurchaseHistory :
@@ -13,4 +13,3 @@ private:
 public:
     void startInterface(State& appState);
 };
-

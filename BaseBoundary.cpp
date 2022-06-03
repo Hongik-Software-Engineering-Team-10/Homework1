@@ -1,4 +1,4 @@
 #include "BaseBoundary.h"
 
-BaseBoundary::BaseBoundary() {}
-BaseBoundary::~BaseBoundary() {}
+void BaseBoundary::startInterface() {}
+void BaseBoundary::showResult() {}

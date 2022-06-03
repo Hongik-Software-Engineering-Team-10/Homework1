@@ -4,24 +4,23 @@ void PurchaseProduct::startInterface(State& appState)
 {
 	ui = new PurchaseProductUI();
 	auto manager = ProductManager::getInstance();
-	//auto DB = AccountDB::getInstance();
+	auto DB = AccountManager::getInstance();
 
 	ui->startInterface();
 
 	Product selectedProduct = manager->getProduct(appState.selectedProduct);
 	if (selectedProduct.name[0] == '\0' || selectedProduct.leftQuantity == 0)
 	{
-		ui->updateInterface("");
+		ui->showResult("");
 		appState.selectedProduct[0] = '\0';
 	}
 	else
 	{
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s", selectedProduct.sellerID, selectedProduct.name);
-		ui->updateInterface(output);
+		sprintf(output, "> %s %s\n", selectedProduct.sellerID, selectedProduct.name);
+		ui->showResult(output);
 
-		// TODO: Do purchase.
-		//DB->purchaseProduct(appState.userID, selectedProduct.name);
+		DB->purchaseProduct(appState.userID, selectedProduct.name);
 		selectedProduct.leftQuantity--;
 		manager->setProduct(selectedProduct);
 

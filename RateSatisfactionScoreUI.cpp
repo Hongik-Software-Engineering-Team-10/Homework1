@@ -3,11 +3,11 @@
 void RateSatisfactionScoreUI::startInterface(const char* inputString, int& inputInteger)
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("4.4. ï¿½ï¿½Ç° ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½\n");
+	fio->printf("4.4. »óÇ° ±¸¸Å¸¸Á·µµ Æò°¡\n");
 	fio->scanf("%s %d", inputString, &inputInteger);
 }
 
-void RateSatisfactionScoreUI::updateInterface(const char* outputString)
+void RateSatisfactionScoreUI::showResult(const char* outputString)
 {
 	FileIO* fio = FileIO::getInstance();
 	fio->printf("%s\n", outputString);

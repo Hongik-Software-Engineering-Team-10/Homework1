@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseControl.h"
+#include "AccountManager.h"
 #include "PurchaseProductUI.h"
 
 class PurchaseProduct :
@@ -11,4 +12,3 @@ private:
 public:
     void startInterface(State& appState);
 };
-

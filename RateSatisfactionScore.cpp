@@ -12,15 +12,15 @@ void RateSatisfactionScore::startInterface(State& appState)
 	Product product = manager->getProduct(productName);
 	if (product.name[0] == '\0')
 	{
-		ui->updateInterface("");
+		ui->showResult("");
 	}
 	else
 	{
 		product.addSatisfactionScore(score);
 
 		char output[MAX_STRING * 10];
-		sprintf(output, "> %s\t%s\t%.1lf", product.sellerID, product.name, product.satisfactionScore);
-		ui->updateInterface(output);
+		sprintf(output, "> %s %s %.0lf\n", product.sellerID, product.name, product.satisfactionScore);
+		ui->showResult(output);
 
 		manager->setProduct(product);
 	}

@@ -3,5 +3,10 @@
 void StatsUI::startInterface()
 {
 	FileIO* fio = FileIO::getInstance();
-	fio->printf("5.1. íŒë§¤ ìƒí’ˆ í†µê³„\n");
+	fio->printf("5.1. ÆÇ¸Å »óÇ° Åë°è\n");
+}
+void StatsUI::showResult(const char* output)
+{
+	FileIO* fio = FileIO::getInstance();
+	fio->printf("%s\n", output);
 }

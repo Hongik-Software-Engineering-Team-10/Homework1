@@ -5,7 +5,6 @@ class RateSatisfactionScoreUI :
     public BaseBoundary
 {
 public:
-    void startInterface(const char* inputString, int& inputInteger);
-    void updateInterface(const char* outputString);
+    virtual void startInterface(const char* inputString, int& inputInteger);
+    virtual void showResult(const char* outputString);
 };
-

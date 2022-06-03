@@ -3,6 +3,6 @@
 class WithdrawAccountUI : public BaseBoundary
 {
 public:
-	void startInterface();
-	void showResult(const char* resultUI);
+	virtual void startInterface();
+	virtual void showResult(const char* resultUI);
 };
